@@ -26,7 +26,7 @@ export const runIntegrationTest= (testName,setRows) =>{
         }).then(res => res.json())
         .catch(error => updateTestStatus(setRows,testName,error,"Error"))
         .then(response =>{
-          if(response.status != 200){
+          if(!response.token){
             updateTestStatus(setRows,testName,response,"Error")
             return
           }
