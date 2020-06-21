@@ -15,7 +15,7 @@ const urlWithDrawal = 'http://bankapimaai.azurewebsites.net/api/WithDrawal';
 export const runIntegrationTest= (testName,setRows) =>{
     if(testName === "Auth and Query Integration"){
       
-        var data = {username: 'madai',password:'maai123'};
+        var data = {username: 'maai',password:'maai123'};
         
         fetch(urlAuth, {
           method: 'POST', 
